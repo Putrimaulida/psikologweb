@@ -1,0 +1,16 @@
+h2{
+    color: white;
+    font: Times New Roman;
+    text-align: center;
+}
+body{
+    background: url('img/background.jpg');
+    background-repeat: repeat;
+    color: black;
+}
+.footer{
+    background-color: grey;
+}
+center{
+	text-align: left;
+}

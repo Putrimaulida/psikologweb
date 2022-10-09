@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jasa Loundry ALCASIMA</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <table border="3" align="right" style="background-color: lightblue;">
+        <tr align="center">
+            <h1 align="right">
+                <td><a href="#Link Relatif"><font size ="2" >HOME</a> </font></td>
+                <td><a href="#Link Relatif"><font size ="2" >CEK HARGA</a> </font></td>
+                <td><a href="#Link Relatif"><font size ="2" >LOGOUT</a></font></td>
+                </h1>
+        </table>    
+        <br><br><br><hr>
+        <p align="center">
+            <img src="banner.png" height="50%" width="50%"><br><br>
+            <link rel="stylesheet" type="text/css" href="styleSlideShow.css">
+            <script src="jquery-3.6.0.js"></script>
+            <script>
+            var i = 0;
+            $(document).ready(function(){
+                $('.slidertitle, #slider img').hide();
+                showNextImage();
+                setInterval('showNextImage()', 3000);
+            });
+            function showNextImage(){
+                i++;
+                $('#sliderImage' + i).appendTo('#slider').fadeIn(1100).delay(1000).fadeOut(1100);
+                $('#title' + i).appendTo('#slider').fadeIn(1100).delay(1000).fadeOut(1100);
+                if(i==3){
+                    i = 0;
+                }
+            };
+            </script>
+            </head>
+            <body>
+
+            <div id="slider">
+                <img id="sliderImage1" src="img/home.jpg">
+                <div class="slidertitle" id="title1">Testimoni</div>
+
+                <img id="sliderImage2" src="login.jpg">
+                <div class="slidertitle" id="title2">Ruang Mesin Cuci</div>
+
+            </div>
+            <p align="center"></p>                
+            <font size ="5" ><b>JASA LAUDNRY AMAN NYAMAN BERSIH TERPECAYA</b></font><br>
+            <font size ="5">Kebersihan Terjamin<br>
+            Layanan Kami yang Terpercaya dan Terbaik<br>
+            kami menjamin keamanan pakaian Anda</font>
+        </p>
+        <p align="center">
+            <div style="background-color: black;">
+            <h2><b>OVERVIEW</b></h2>
+            </div>
+        </p>
+        <p align="left">
+            <font size="3">Gaya hidup praktis dan cepat telah 
+                menjadi ciri khas gaya hidup manusia modern. 
+                Salah satu contoh yang bisa dilihat adalah 
+                tentang cara orang mencuci pakaian. Kebutuhan 
+                mencuci pakaian merupakan salah satu 
+                kebutuhan utama dalam suatu keluarga. <br>
+            
+            <br><br></font>
+    
+        <a name="Link Relatif">
+            <p align="center">
+                <div style="background-color: black;">
+                <h2><b>CEK HARGA</b></h2></div>
+                <div id="box">
+                    <form>
+                        <label>Berat</label>
+                        <input type="text"><br>
+                        <br><label>Jenis</label>
+                        <input type="text"><br>
+                        <br><label>Kecepatan</label>
+                        <input type="text"><br>
+                        <br><label>Membership</label>
+                        <input type="text"><br>
+                        <button>CHECK</button>
+                    </form>
+                </div>
+            </p>
+        </a>
+        <a href="#TOP">Back to Home</a>
+        <div style="background-color: gray;">
+        <font size="3">
+        <footer align="center">Copyright &copy; 2021, All Rights Reserved</footer></font></div>
+    </body>
+</html>
