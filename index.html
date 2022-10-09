@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Halaman Login</title>
+        <link rel="stylesheet" href="styleLogin1.css" type="text/css" >
+        <script src="jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#box").load("http://localhost/UTS_Putri/laundry.html");
+                });
+            });
+        </script>
+        <script>
+            function ValidateForm(){
+                let x = document.getElementById("Username").value;
+                let text;
+                if (x == ""){
+                    alert("Harus terisi");
+                }
+            }
+        </script>
+        <script>
+            function myFunction(){
+                let x = document.getElementById("numb").value;
+                let text;
+                if (isNaN(x) || x < 8 || x > 1){
+                    text="http://localhost/UTS_Putri/laundry.html";
+                } else {
+                    text="Password minimal 8 karakter";
+                }
+                document.getElementById("demo").innerHTML = text;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="center">
+            <h1>Jasa Loundry ALCASIMA</h1>
+            <h2>Ayoo Login Terlebih Dahulu</h2>
+            <div id="box">
+                <form>
+                    <label>Username</label><br>
+                    <input type="text"><br>
+                    <label>Password</label><br>
+                    <input type="password"><br>
+                </form>
+            </div>
+            <br><button>LOGIN</button>
+        </div>
+    </body>
+</html>
