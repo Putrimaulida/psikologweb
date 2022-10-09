@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'putriweb'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F57E1DAC7DC8418C86F8FF6A1D6C51C0 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FB3C32D0C01A4267B760B93214299DFC }}
           package: .
